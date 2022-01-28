@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Audio Shelf</title>
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+</head>
+
+<body>
+    <div class="bodyF">
+
+        <header>
+            <div class="headerF">
+
+                <a href="demo.html">Товары</a>
+                <a href="index.html">Услуги</a>
+                <div class="logo"><img alt="Лого" src="images/Logo.png" width="130"></div>
+                <a href="">Блог</a>
+                <a href="">Контакты</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="mainF">
+                <form name="Contact" method="post" data-netlify="true">
+                    <fieldset class="fieldsetF">
+                        <legend>Данные для входа</legend>
+
+                        <label class="select_line3">Почта*<input type="email" name="Почта"
+                                placeholder="audioshells@gmail.com" class="inputF" required></label>
+                        <label for="password" class="select_line3">Пароль*<input type="password" name="Пароль"
+                                id="password" class="inputF" required></label>
+                    </fieldset>
+                    <fieldset class="fieldsetF">
+                        <legend>Личные данные</legend>
+                        <label class="select_line3">Имя<input type="text" name="Имя" class="inputF"></label>
+                        <label class="select_line3">Дата рождения <input type="date" name="Дата рождения"
+                                class="inputF"></label>
+                        <div class="select_line">Пол <select name="Пол">
+                                <option value="Не указано" selected>Не указано</option>
+                                <option value="Мужской">Мужской</option>
+                                <option value="Женский">Женский</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldsetF">
+                        <legend>Контактные данные</legend>
+                        <label class="select_line3">Телефон*<input type="tel" name="Телефон" class="inputF"
+                                placeholder="88002004666" required></label>
+                        <div class="select_line1"> Удобное время для связи: </div>
+                        <div class="select_line2">
+                            <label><input type="checkbox" name="Время" value="Утро"><span
+                                    class="timeF">Утро</span></label>
+                            <label><input type="checkbox" name="Время" value="День"><span
+                                    class="timeF">День</span></label>
+                            <label><input type="checkbox" name="Время" value="Вечер"><span
+                                    class="timeF">Вечер</span></label>
+                            <label><input type="checkbox" name="Время" value="Ночь"><span
+                                    class="timeF">Ночь</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttonsF">
+                        <button type="reset" class="buttonF" disabled>Сбросить<img alt="Сбросить" src="images/Cross.svg"
+                                width="25"></button>
+                        <button type="submit" class="buttonF">Отправить<img alt="Вправо" src="images/Arrow_right.svg"
+                                width="25"></button>
+                    </div>
+                </form>
+
+                <form>
+                    <fieldset class="fieldsetF1">
+                        <legend>Определения</legend>
+                        <dl>
+                            <dt>Псевдоэлемент</dt>
+                            <dd>
+                                Элементы, которых не существует в HTML-разметке. Они создаются и
+                                позиционируются исключительно при помощи CSS. Чаще всего используются для создания
+                                различных декоративных элементов (которые не несут содержательного смысла).
+                            </dd>
+                            <dt>Псевдокласс</dt>
+                            <dd>
+                                Особый вид селектора, который уточняет тип или состояние. Обычно это какой-то
+                                качественный признак: реакция на наведение курсора, порядок следования и другие.
+                            </dd>
+                        </dl>
+                    </fieldset>
+                    <fieldset class="fieldsetF2">
+                        <legend>Использованные псевдоклассы и псевдоэлементы</legend>
+                        <div class="checkelements">
+                            <label><input type="checkbox" name="check" value=":hover" checked><span
+                                    class="checkC1">:hover</span></label>
+                            <label><input type="checkbox" name="check" value=":focus" checked><span
+                                    class="checkC2">:focus</span></label>
+                            <label><input type="checkbox" name="check" value=":active" checked><span
+                                    class="checkC1">:active</span></label>
+                            <label><input type="checkbox" name="check" value=":checked" checked><span
+                                    class="checkC2">:checked</span></label>
+                            <label><input type="checkbox" name="check" value=":any-link"><span
+                                    class="checkC1">:any-link</span></label>
+                            <label><input type="checkbox" name="check" value=":empty"><span
+                                    class="checkC2">:empty</span></label>
+                        </div>
+                        <div class="checkclasses">
+                            <label><input type="checkbox" name="check" value="::selection" checked><span
+                                    class="checkC">::selection</span></label>
+                            <label><input type="checkbox" name="check" value="::placeholder" checked><span
+                                    class="checkC">::placeholder</span></label>
+                            <label><input type="checkbox" name="check" value="::first-letter" checked><span
+                                    class="checkC">::first-letter</span></label>
+                            <label><input type="checkbox" name="check" value="::after" checked><span
+                                    class="checkC">::after</span></label>
+                            <label><input type="checkbox" name="check" value="::before"><span
+                                    class="checkC">::before</span></label>
+                            <label><input type="checkbox" name="check" value="::first-line"><span
+                                    class="checkC">::first-line</span></label>
+                        </div>
+
+                    </fieldset>
+
+                </form>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="footerC">
+                <div class="footer_column">
+                    <div class="footer_logo">
+                        <img alt="Лого" src="images/Logo.png" width="130">
+                    </div>
+                    <div class="footer_column_line1">
+                        <img alt="Флаг РФ" src="images/RU_Flag.png" width="25">
+                        <div>RU</div>
+                        <img alt="Вниз" src="images/Arrow_down.svg" width="10">
+                    </div>
+                    <div class="Copyright">© 2020 Audioshells </div>
+                </div>
+                <div class="footer_column">
+                    <div class="h4C">
+                        <h4>Смотрите</h4>
+                    </div>
+                    <div class="footer_list">
+                        <div><a href="">Товары</a></div>
+                        <div><a href="">Услуги</a></div>
+                        <div><a href="">Блог</a></div>
+                        <div><a href="">Контакты</a></div>
+                    </div>
+                </div>
+                <div class="footer_column">
+                    <div class="h4C">
+                        <h4>Обслуживание клиентов</h4>
+                    </div>
+                    <div class="footer_list">
+                        <div><a href="">Свяжитесь с нами</a></div>
+                        <div><a href="">Политика конфиденциальности</a></div>
+                    </div>
+                </div>
+                <div class="footer_column">
+                    <div class="h4C">
+                        <h4>Контакты</h4>
+                    </div>
+                    <div class="footer_column_line2">
+                        <img alt="Иконка телефона" src="images/Icon_phone.svg" width="16">
+                        <a href="tel:88002004666">8 (800) 200-46-66</a>
+                    </div>
+                    <div class="footer_column_line3">
+                        <img alt="Иконка почты маленькая" src="images/Icon_mail_small.svg" width="16">
+                        <a href="mailto:audioshells@gmail.com">
+                            audioshells@gmail.com
+                        </a>
+                    </div>
+                    <div class="footer_column_line4">
+                        <a href="https://instagram.com"><img alt="Иконка Инстаграм" src="images/Icon_inst.svg"
+                                width="38"></a>
+                        <a href="https://facebook.com"><img alt="Иконка Фейсбук" src="images/Icon_fb.svg"
+                                width="38"></a>
+                        <a href="https://twitter.com"><img alt="Иконка Твиттер" src="images/Icon_tw.svg" width="38"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

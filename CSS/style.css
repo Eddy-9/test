@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+:root
+{ 
+    --bg-color: #F9F8F5;
+}
+
+::selection
+{
+    background: #f0f331;
+}
+
+a:hover 
+{
+    border-color: black;
+}
+
+a{
+    border-bottom: 1px solid transparent;
+    transition: 1s;
+}
+
+button:hover
+{
+    border: 3px solid #000000;
+    
+}
+
+::placeholder
+{
+    font-style: italic;
+}
+
+a:focus 
+{
+    background-color: #b5edfc;
+}
+
+a:active
+{
+    text-shadow: 0 0 1px black;
+}
+
+button:active
+{
+    text-shadow: 0 0 1px black;
+}
+
+input:required 
+{
+    border: 1px solid red;
+}
+
+button:disabled
+{
+    background-color: #AAAAAA;
+}
+
+button:hover:disabled
+{
+    border: 2px solid #000000;
+}
+
+
+body
+{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 99%;
+    margin: auto;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+button
+{
+    border: 2px solid #000000;
+    background: transparent;
+    transition: 600ms;
+}
+
+
+.Main_Screen
+{
+
+
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: var(--bg-color);
+
+
+}
+
+.headerC
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #F9F8F5;
+
+}
+
+.logo   
+{
+    width: 10%;
+    display: flex;
+  
+}
+
+
+img {
+    width: 100%; /* ширина картинки */
+    height: auto; /* высота картинки */
+  }
+
+
+
+.Main_text_box
+{
+
+width: 500px;
+height: 200px;
+padding-top: 130px;
+
+}
+
+.Main_table
+{
+
+
+
+margin-left: 745px;
+margin-top: -275px;
+
+}
+
+.Main_text
+{
+
+width: 560px;
+height: 200px;
+padding-left: 175px;
+margin-top: -25px;
+
+}
+
+.Page_number
+{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.Text1
+{
+    font-weight: 300;
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.Text2
+{
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: -25px;
+}
+
+.Page_number1
+{
+    width: 150px;
+    font-weight: 500;
+    font-size: 0.938em;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main_bottom
+{
+    margin-top: 55px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Scroll
+{
+    padding-left: 50%;
+    margin-left: -0.938em;
+    padding-bottom: 20px;
+}
+
+.Lines
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Columns
+{
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.h3C
+{
+    font-size: 24px;
+    
+}
+
+.textC
+{
+    font-weight: 500;
+    font-size: 0.938em;
+}
+
+.Column
+{
+    width: 25%;
+    margin: auto;
+    display: flex;
+  flex-direction: column;
+}
+
+.fill
+{
+    opacity: 0;
+    animation: dissappear 1s 5s linear 1;
+    animation-fill-mode:forwards;
+    
+}
+
+.loader
+{
+    margin-top: 25%;
+    margin-left: 70%;
+    width: 75px;
+    height: 75px;
+    border: 8px outset ;
+    position: absolute;
+    animation: rotation 5s ease-in-out infinite;
+    border-radius: 50%;
+}
+
+
+
+@keyframes rotation {
+    from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(4320deg);
+  }
+}
+
+
+
+@keyframes dissappear
+{
+    to 
+    {
+      opacity: 1;
+    }
+}
+
+.Column_text
+{
+    flex: 1;
+    margin-top: -20px;
+}
+
+.Column_bottom_text
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.Column_bottom_arrow
+{
+    margin-left: 1.5em;
+    margin-top: 0.3em;
+}
+
+.Description_section
+{
+    margin-top: 14em;
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Description_img
+{
+    margin-left: 7em;
+}
+
+.Desc_img
+{
+   margin-top: -445px;
+   margin-left: -90px;
+   position: absolute;
+}
+
+.Desc_circ1
+{
+    margin-top: -315px;
+    margin-left: 383px;
+    position: absolute;
+}
+
+.Desc_circ2
+{
+    margin-top: -160px;
+    margin-left: 101px;
+    position: absolute;
+}
+
+.Description_text
+{
+    padding-left: 200px;
+    
+    margin-top: -50px;
+}
+
+.h2D
+{
+    width: 400px;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.Desc_line
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 0.938em;
+    color: #647382;
+}
+
+.Desc_circ_text
+{
+    margin-left: 20px;
+}
+
+.Desc_text
+{
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 25px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.Gallery
+{
+    margin-top: 200px;
+    background-color: #F9F8F5;
+}
+
+.Gallery_images
+{
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Room
+{
+    display: flex;
+    background-color: white;
+}
+
+.Gallery_bottom
+{
+    margin-top: 50px;
+    padding-left: 50%;
+    margin-left: -650px;
+    padding-bottom: 60px;
+}
+
+.Subscription
+{
+    padding-left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.h3S
+{
+    font-size: 22px;
+}
+
+.Subs_text
+{
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 25px;
+    width: 600px;
+    margin-left: -50px;
+    box-sizing: border-box;
+}
+
+input
+{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #647382;
+
+}
+
+.input_email
+{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 25px;
+    margin-left: -50px;
+    width: 600px;  
+}
+
+
+
+.Email_button
+{
+    margin-top: 30px;
+    border: 2px solid #000000;
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 0.938em;
+    margin-left: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.938em;
+    font-weight: 700;
+}
+
+
+.footerC
+{
+    margin: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #F9F8F5;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.footer_column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo
+{
+    padding-top: 15%;
+}
+
+.footer_column_line1
+{
+    width: 65px;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    flex: 1;
+
+}
+
+.Copyright
+{
+    display: flex;
+}
+
+.h4C
+{
+    font-size: 1.063em;
+}
+
+.footer_column_line2
+{
+    width: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 30px;
+
+}
+
+.footer_column_line3
+{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.938em;
+    line-height: 30px;
+}
+
+.footer_column_line4
+{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 90px;
+
+}
+
+.footer_list
+{
+    line-height: 30px;
+}
+
+.bodyF
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerF
+{
+    margin: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #F9F8F5;
+}
+
+.mainF
+{
+    flex: 1;
+}
+
+.fieldsetF
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 5px 5px 15px #AAAAAA;
+}
+
+.fieldsetF1
+{
+    margin-top: 200px;
+    margin-bottom: 60px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 5px 5px 15px #AAAAAA;
+}
+
+.fieldsetF2
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+    box-shadow: 5px 5px 15px #AAAAAA;
+}
+
+.inputF
+{
+    flex: 1;
+    
+}
+
+.select_line
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.select_line1
+{
+    margin-top: 20px;
+}
+
+.select_line2
+{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.select_line3
+{
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.buttonsF
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.buttonF
+{
+    width: 220px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.938em;
+    font-weight: 700;
+    box-shadow: 5px 5px 15px #AAAAAA;
+}
+
+input[type="checkbox"]:checked ~ .timeF
+{
+    text-shadow: 0 0 2px black;
+}
+
+legend
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+dt
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+dt::first-letter
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+dd
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+dd::after
+{
+   content: "\1F6C8";
+}
+
+.checkelements
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkclasses
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="checkbox"]:checked ~ .checkC
+{
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ .checkC1
+{
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ .checkC2
+{
+    text-decoration: line-through;
+}
+
+.checkC1
+{
+    color: blue;
+}
+
+.checkC2
+{
+    color: red;
+}
+
+.demolines
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.demoline
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.sample
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.linearD
+{
+    background-image: repeating-linear-gradient(
+        45deg,
+        #FFDDD6 0px 15px,
+        #FFF9ED 15px 30px
+    );
+}
+
+.radialD
+{
+    background-image: radial-gradient(
+        #5fc3e4 ,
+        #4700b9
+    )
+}
+
+.conicD
+{
+    background-image: conic-gradient(
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        purple,
+        red
+      );
+}
+
+.first2D
+{
+    background-color: #FBD786;
+}
+
+.first2D:hover
+{
+    transform: scaleY(-1);
+    animation: scale 5s infinite;
+}
+
+@keyframes scale  
+{
+    50% 
+    {
+        transform: none;
+    }
+}
+
+.second2D
+{
+    background-color: #FBD786;
+}
+
+.second2D:hover
+{
+    transform: rotate(720deg);
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate  
+{
+    50% {
+      transform: none;
+      }
+}
+
+.first3D
+{
+    background-color: #f7797d;
+    transform: rotateY(60deg);
+    animation: rotate3D 5s infinite;
+}
+
+@keyframes rotate3D {
+    50% {
+      transform: none;
+      }
+}
+
+.second3D
+{
+    background-color: #f7797d;
+    transform: rotateX(60deg);
+    animation: rotate3D 5s infinite;
+}
+
+.transition1
+{
+    background-color: #FF8C00;
+}
+
+.transition1:hover
+{
+    transform: scale(1.5);
+    transition: 500ms linear;
+}
+
+.transition2
+{
+    background-color: #FF8C00;
+}
+
+.transition2:hover
+{
+    box-shadow: 0px 10px 30px #AAAAAA;
+    transition: 500ms linear;
+}
+
+@media only screen and (max-width: 980px)  
+{ 
+    .Columns
+    {
+        font-size: 12px;
+
+        
+    }
+
+    .h3C
+{
+    font-size: 18px;
+    
+}
+}
+
+ @media only screen and (max-width: 680px)  
+{ 
+    .Columns
+    {
+        font-size: 10px;
+        flex-direction: column;
+        
+    }
+
+    .h3C
+{
+    font-size: 14px;
+    
+}
+}
